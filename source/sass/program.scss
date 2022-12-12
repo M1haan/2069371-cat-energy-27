@@ -1,0 +1,35 @@
+.program {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.program__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 29px;
+}
+
+.program__link {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 18px;
+  display: block;
+}
+
+.program__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding-bottom: 23px;
+}

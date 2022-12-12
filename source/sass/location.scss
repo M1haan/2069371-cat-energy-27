@@ -1,0 +1,23 @@
+.location {
+  background-color: #ffffff;
+
+  &--theme {
+    background-color: #f2f2f2;
+  }
+}
+
+.location__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}

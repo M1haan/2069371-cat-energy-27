@@ -1,0 +1,31 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin container {
+  margin: 0 20px 0;
+}
+
+@mixin buttons {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+
+  &--accent {
+    background-color: #68b738;
+  }
+
+  &--secondary {
+    background-color: #f2f2f2;
+  }
+}
