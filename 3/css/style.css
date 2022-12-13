@@ -1,0 +1,447 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+/* файлы для индекса */
+.site-list {
+  list-style: none;
+}
+
+.site-list__link {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.program {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.program__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 29px;
+}
+
+.program__link {
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 18px;
+  display: block;
+}
+
+.program__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding-bottom: 23px;
+}
+
+.hero {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  background-color: rgba(104, 183, 56, 0.85);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero .button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-style: 14px;
+  line-height: 18px;
+}
+.hero .button--accent {
+  background-color: #68b738;
+}
+.hero .button--secondary {
+  background-color: #f2f2f2;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
+.hero__description {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.hero__image {
+  padding-bottom: 3px;
+}
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  list-style: none;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 49px;
+}
+
+.advantages__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example {
+  background-color: #eaeaea;
+  font-family: "Oswald", sans-serif;
+}
+
+.example__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.example__intro {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.example__item {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.example__value {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.example__total {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.slider__item {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.location {
+  background-color: #ffffff;
+}
+.location--theme {
+  background-color: #f2f2f2;
+}
+
+.location__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.location__address {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.main-footer {
+  background-color: #f2f2f2;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 21px;
+}
+
+.copyright {
+  padding: 22px 0;
+}
+
+.copyright__link {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* файлы для каталога */
+.main-container__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 27px 0 41px;
+}
+
+.product {
+  list-style: none;
+}
+.product .button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-style: 16px;
+  line-height: 20px;
+}
+.product .button--accent {
+  background-color: #68b738;
+}
+.product .button--secondary {
+  background-color: #f2f2f2;
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.product__list {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.product__text {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.product__value {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.product-additional .button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-style: 14px;
+  line-height: 18px;
+}
+.product-additional .button--accent {
+  background-color: #68b738;
+}
+.product-additional .button--secondary {
+  background-color: #f2f2f2;
+}
+
+.product-additional__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 36px;
+}
+
+.product-additional__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 13px;
+}
+
+.product-additional__amount {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.product-additional__price {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+.stock {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.stock__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+  padding: 48px 61px 43px 58px;
+}
+
+/* файлы для форм */
+.application {
+  font-family: "Oswald", sans-serif;
+}
+.application .button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  color: #ffffff;
+  font-style: 16px;
+  line-height: 20px;
+}
+.application .button--accent {
+  background-color: #68b738;
+}
+.application .button--secondary {
+  background-color: #f2f2f2;
+}
+
+.application__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 39px;
+}
+
+.application__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.application__field::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.application__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 35px;
+}
+
+.application__legend {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+/*# sourceMappingURL=style.css.map */
