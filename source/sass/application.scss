@@ -1,11 +1,5 @@
 .application {
   font-family: "Oswald", sans-serif;
-
-  .button {
-    @include buttons();
-    font-style: 16px;
-    line-height: 20px;
-  }
 }
 
 .application__intro {

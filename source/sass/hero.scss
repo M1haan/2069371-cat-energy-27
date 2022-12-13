@@ -4,12 +4,6 @@
   background-color: rgba(104, 183, 56, 0.85);
   text-transform: uppercase;
   color: #ffffff;
-
-  .button {
-    @include buttons();
-    font-style: 14px;
-    line-height: 18px;
-  }
 }
 
 .hero__title {

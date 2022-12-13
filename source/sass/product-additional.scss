@@ -1,11 +1,3 @@
-.product-additional {
-  .button {
-    @include buttons();
-    font-style: 14px;
-    line-height: 18px;
-  }
-}
-
 .product-additional__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
