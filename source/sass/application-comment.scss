@@ -1,0 +1,14 @@
+.application__textarea {
+  margin-bottom: 23px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
+}

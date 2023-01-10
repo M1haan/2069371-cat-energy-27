@@ -1,5 +1,24 @@
 .application {
   font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.application__container {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.application__main-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 27px 0 37px;
 }
 
 .application__intro {
@@ -17,6 +36,8 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 14px;
 }
 
 .application__field::placeholder {
@@ -31,7 +52,6 @@
   font-size: 24px;
   line-height: 26px;
   margin: 0;
-  margin-top: 26px;
   margin-bottom: 35px;
 }
 
@@ -41,4 +61,73 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+}
+
+.application__submit {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .application__container {
+    width: 708px;
+  }
+
+  .application__main-title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 65px 0 54px;
+  }
+
+  .application__intro {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .application__label {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .application__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .application__submit {
+    flex-direction: row;
+    margin-bottom: 72px;
+  }
+
+  .application__textarea {
+    margin-bottom: 65px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 19px;
+  }
+
+  .application__legend {
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application__container {
+    width: 1220px;
+  }
+
+  .application__main-title {
+    padding: 73px 0 56px;
+  }
+
+  .application__legend {
+    margin-left: 84px;
+  }
+
+  .application__submit {
+    margin-bottom: 82px;
+  }
 }

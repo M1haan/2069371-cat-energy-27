@@ -1,0 +1,23 @@
+.application-additionally__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-additionally__list {
+    display: grid;
+    grid-template-columns: 221px 189px;
+    row-gap: 32px;
+    column-gap: 123px;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-additionally__list {
+    display: flex;
+    flex-direction: row;
+  }
+}

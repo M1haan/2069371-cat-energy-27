@@ -1,12 +1,27 @@
 .hero {
   font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  background-color: rgba(104, 183, 56, 0.85);
-  text-transform: uppercase;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(104, 183, 56, 0.85);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 302px;
+  z-index: -1;
+  right: 0;
+  left: 0;
 }
 
 .hero__title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   padding-top: 27px;
@@ -15,6 +30,7 @@
 }
 
 .hero__description {
+  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -24,4 +40,92 @@
 
 .hero__image {
   padding-bottom: 3px;
+}
+
+.hero__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.hero__link {
+  padding: 7px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .hero__container {
+    display: flex;
+    flex-direction: column;
+    width: 708px;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    background: none;
+    width: 768px;
+  }
+
+  .hero__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-left: 120px;
+    margin-right: auto;
+  }
+
+  .hero__description {
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-left: 120px;
+    margin-right: auto;
+  }
+
+  .hero__link {
+    text-align: left;
+    margin-left: 120px;
+    margin-right: auto;
+    padding: 14px 26px;
+  }
+
+  .hero__image {
+    width: 709px;
+    height: 609px;
+    margin-top: -80px;
+    order: 4;
+    z-index: -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero__container {
+    width: 1220px;
+    min-height: 696px;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(104, 183, 56, 0.85);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 694px;
+    z-index: -1;
+    top: 0;
+    margin: 0;
+    left: 50%;
+    display: block;
+  }
+
+  .hero__image {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: 180px;
+    right: 340px;
+  }
 }

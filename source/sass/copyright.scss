@@ -11,3 +11,11 @@
   list-style: none;
   text-decoration: none;
 }
+
+.copyright__link-logo {
+  margin-left: 130px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
+}

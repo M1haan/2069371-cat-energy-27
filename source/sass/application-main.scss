@@ -1,0 +1,42 @@
+.application-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-main__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.application-main__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.application__group {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .application-main__column {
+    margin-bottom: 72px;
+  }
+
+  .application-main {
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .application-main {
+    flex-direction: row;
+    margin-bottom: 65px;
+  }
+
+  .application-main__column {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
+}
