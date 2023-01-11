@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Кэт энерджи: Подбор программы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://htmlacademy-adaptive.github.io/2069371-cat-energy-27/4/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <nav class="navigation">
+        <div class="navigation__container">
+          <div class="navigation__logo">
+            <a href="index.html" class="navigation__logo-icon">
+              <img src="./img/logo-mobile.svg" alt="Логотип Cat-energy" width="34" height="38">
+            </a>
+            <a href="index.html" class="navigation__logo-text">
+               <img src="./img/logo-cat-energy.svg" alt="Логотип Cat-energy" width="101" height="18">
+            </a>
+            <button class="navigation__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+          </div>
+
+          <ul class="navigation__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a href="index.html" class="site-list__link">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html" class="site-list__link">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="main-container">
+      <section class="application">
+        <div class="application__container">
+          <h1 class="application__main-title">Подбор программы</h1>
+          <h2 class="visually-hidden">Данные питомца</h2>
+          <p class="application__intro">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
+          <form class="application__form" action="https://echo.htmlacademy.ru/" method="post">
+          <section class="application-main">
+            <div class="application-main__column">
+              <label class="application__label" for="name">
+                ИМЯ:*
+                <input class="application__field field" type="text" placeholder="Барсик" name="pets name" id="name" required>
+              </label>
+              <label class="application__label" for="weight">
+                Вес (кг):*
+                <input class="application__field field" type="text" placeholder="7" name="weight" id="weight" required>
+              </label>
+              <label class="application__label" for="old">
+                Возраст (лет):
+                <input class="application__field field" type="text" placeholder="7" name="old" id="old" >
+              </label>
+            </div>
+
+            <fieldset class="application__group">
+              <ul class="application-main__list">
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="radio" name="program food weight loss" checked>
+                    похудение
+                  </label>
+                </li>
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="radio" name="program-food weight gain">
+                    Набор массы
+                  </label>
+                </li>
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="radio" name="program-food advice">
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
+
+            <section class="application-user">
+              <h2 class="application__title">Контактные данные (владельца кота)</h2>
+              <div class="application-user__container">
+                <label class="application__label" for="email">
+                  E-mail:*
+                  <input class="application__field field" type="email" placeholder="кuklachev@gmail.com" name="email" id="email" required>
+                </label>
+                <label class="application__label" for="phone">
+                  Телефон:*
+                  <input class="application__field field" type="tel" placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
+                </label>
+              </div>
+            </section>
+
+            <section class="application-comment">
+              <h2 class="application__title">Комментарий</h2>
+              <textarea class="application__field application__textarea field" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </section>
+
+            <section class="application-additionally">
+              <h2 class="application__title">Дополнительно</h2>
+              <ul class="application-additionally__list">
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="checkbox" name="additionally sugary" checked>
+                    сахарозаменитель
+                  </label>
+                </li>
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="checkbox" name="additionally">
+                    питьевая вода
+                  </label>
+                </li>
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="checkbox" name="additionally milk">
+                    молоко
+                  </label>
+                </li>
+                <li class="application__item">
+                  <label class="application__label">
+                    <input class="application__field field" type="checkbox" name="additionally">
+                    витамины
+                  </label>
+                </li>
+              </ul>
+            </section>
+
+            <div class="application__submit">
+              <button class="button button--accent" type="submit">отправить заявку</button>
+              <p class="application__legend">* — Обязательные поля</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="location location--theme">
+        <div class="location__container">
+          <h2 class="location__title">приглашаем к сотрудничеству дилеров!</h2>
+          <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <img class="map" src="./img/mp.jpg" alt="место комнании на карте">
+      </section>
+
+    </main>
+
+
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="main-footer__container">
+        <a href="#" class="main-footer__logo">
+          <img src="./img/logo-cat-energy.svg" alt="Логотип Cat energy">
+        </a>
+
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Ютуб</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Телеграм</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+            <img class="copyright__link-logo" src="./img/logo-html-academy.svg" alt="Логотип HTML Academy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
