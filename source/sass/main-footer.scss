@@ -7,6 +7,17 @@
 .main-footer__container {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .main-footer__logo {
@@ -14,19 +25,4 @@
   text-align: center;
   padding-top: 39px;
   padding-bottom: 32px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-footer__container {
-    width: 708px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-footer__container {
-    width: 1220px;
-  }
 }

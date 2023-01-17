@@ -9,6 +9,14 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .application__main-title {
@@ -19,6 +27,16 @@
   line-height: 36px;
   margin: 0;
   padding: 27px 0 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 65px 0 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 73px 0 56px;
+  }
 }
 
 .application__intro {
@@ -29,6 +47,11 @@
   color: #000000;
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .application__label {
@@ -38,6 +61,12 @@
   text-transform: uppercase;
   color: #444444;
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 .application__field::placeholder {
@@ -53,6 +82,12 @@
   line-height: 26px;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .application__legend {
@@ -61,73 +96,47 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 84px;
+  }
 }
 
 .application__submit {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
-}
 
-@media (min-width: $tablet-width) {
-  .application__container {
-    width: 708px;
-  }
-
-  .application__main-title {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 65px 0 54px;
-  }
-
-  .application__intro {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .application__label {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 20px;
-  }
-
-  .application__title {
-    font-size: 36px;
-    line-height: 36px;
-    margin-bottom: 76px;
-  }
-
-  .application__submit {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     margin-bottom: 72px;
   }
 
-  .application__textarea {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.application__group {
+  margin: 0;
+  margin-bottom: 19px;
+}
+
+.application__textarea {
+  @media (min-width: $tablet-width) {
     margin-bottom: 65px;
     width: 100%;
     padding-top: 10px;
     padding-left: 19px;
   }
-
-  .application__legend {
-    margin-left: 64px;
-  }
 }
 
-@media (min-width: $desktop-width) {
-  .application__container {
-    width: 1220px;
-  }
-
-  .application__main-title {
-    padding: 73px 0 56px;
-  }
-
-  .application__legend {
-    margin-left: 84px;
-  }
-
-  .application__submit {
-    margin-bottom: 82px;
-  }
+.application__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

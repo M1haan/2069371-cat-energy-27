@@ -8,6 +8,16 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: grid;
+    grid-template-columns: 500px 600px;
+  }
 }
 
 .example__title {
@@ -17,6 +27,11 @@
   margin: 0;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__intro {
@@ -27,6 +42,12 @@
   color: #444444;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1/-1;
+  }
 }
 
 .example__list {
@@ -34,6 +55,10 @@
   margin: 0;
   margin-bottom: 20px;
   max-width: 366px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .example__item {
@@ -45,6 +70,11 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text {
@@ -54,6 +84,11 @@
   line-height: 12px;
   color: #444444;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__total {
@@ -65,6 +100,16 @@
   margin: 0;
   padding-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .example__slider {
@@ -72,85 +117,31 @@
   padding-bottom: 20px;
 }
 
-@media (min-width: $tablet-width) {
-  .example__container {
-    width: 708px;
+.example__slider-image {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
   }
 
-  .example__case {
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+  }
+}
+
+.example__case {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 366px 174px;
     column-gap: 150px;
   }
 
-  .example__title {
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  .example__intro {
-    font-size: 16px;
-    line-height: 24px;
-    grid-column: 1/-1;
-  }
-
-  .example__list {
-    justify-content: space-between;
-  }
-
-  .example__value {
-    font-size: 30px;
-    line-height: 37px;
-  }
-
-  .example__text {
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  .example__total {
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
-  }
-
-  .example__slider {
-    margin: 0 auto;
-
-    .example__slider-image {
-      width: 560px;
-      height: 512px;
-      margin: 0 auto;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .example__container {
-    width: 1220px;
-    display: grid;
-    grid-template-columns: 500px 600px;
-  }
-
-  .example__case {
+  @media (min-width: $desktop-width) {
     grid-column: 1/2;
     display: flex;
     flex-direction: column;
     min-width: 500px;
-  }
-
-  .example__total {
-    text-align: left;
-  }
-
-
-  .example__slider {
-    margin: 0 auto;
-
-    .example__slider-image {
-      width: 560px;
-      height: 512px;
-      margin: 0 auto;
-    }
   }
 }

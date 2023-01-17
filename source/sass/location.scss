@@ -11,6 +11,18 @@
   margin: 0 auto;
   display: flex;
   padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    justify-content: space-between;
+    padding: 56px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 405px;
+    justify-content: space-between;
+    padding: 56px 80px;
+  }
 }
 
 .location__title {
@@ -20,6 +32,16 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+  }
 }
 
 .location__address {
@@ -28,40 +50,14 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
-}
 
-@media (min-width: $tablet-width) {
-  .location__container {
-    width: 628px;
-    justify-content: space-between;
-    padding: 56px 70px;
-  }
-
-  .location__title {
-    width: 172px;
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .location__address {
+  @media (min-width: $tablet-width) {
     width: 160px;
     font-size: 16px;
     line-height: 20px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .location__container {
-    width: 405px;
-    justify-content: space-between;
-    padding: 56px 80px;
-  }
-
-  .location__title {
-    width: 163px;
-  }
-
-  .location__address {
+  @media (min-width: $desktop-width) {
     width: 155px;
   }
 }

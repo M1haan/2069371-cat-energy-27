@@ -6,11 +6,25 @@
 .navigation__container {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .navigation__logo {
   text-align: center;
   align-self: baseline;
+
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .navigation__logo-icon {
@@ -21,30 +35,14 @@
 .navigation__logo-text {
   text-decoration: none;
   margin-right: 65px;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__container {
-    width: 708px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .navigation__toggle {
-    display: none;
-  }
-
-  .navigation__logo {
-    margin-right: auto;
-  }
-
-  .navigation__logo-text {
+  @media (min-width: $tablet-width) {
     margin-right: 0;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .navigation__container {
-    width: 1220px;
+.navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
