@@ -1,42 +1,63 @@
 .application-main {
-  display: flex;
+  padding: 19px 0 23px;
+  gap: 12px;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 33px 0 72px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &::after {
+    @include divider;
+    width: calc(100% + 40px);
+    left: -20px;
+    background-color: rgb(217, 217, 217);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 50%;
+  }
 }
 
-.application-main__column {
+.application-main__container {
   display: flex;
-  flex-direction: column;
-}
+  align-items: center;
+  flex-grow: 1;
+  text-transform: uppercase;
+  gap: 13px;
 
-.application-main__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.application__group {
-  margin: 0;
-  margin-bottom: 19px;
-}
-
-@media (min-width: $tablet-width) {
-  .application-main__column {
-    margin-bottom: 72px;
+  @media (min-width: $tablet-width) {
+    gap: 13px;
   }
 
-  .application-main {
-    margin-bottom: 71px;
+  @media (min-width: $desktop-width) {
+    min-width: 569px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .application-main {
-    flex-direction: row;
-    margin-bottom: 65px;
+.application-main__label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(68, 68, 68);
+  display: flex;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 2px;
+    padding-left: 3px;
   }
 
-  .application-main__column {
-    margin-right: 80px;
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }

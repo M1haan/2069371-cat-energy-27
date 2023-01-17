@@ -1,14 +1,65 @@
-.application__textarea {
-  margin-bottom: 23px;
-  width: 100%;
-  padding-top: 10px;
-  padding-left: 19px;
+.application-comment {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(68, 68, 68);
+  padding: 12px 0 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    padding: 33px 0 33px;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    padding-bottom: 34px;
+  }
+}
+
+.application-comment__container {
+  min-width: fit-content;
+  padding-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 40px;
+  }
+}
+
+.application-comment__title {
+  @include field-title;
+  display: flex;
+  padding: 13px 0 25px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 31px 0 43px 1px;
+
+    &::before {
+      bottom: 55px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 33px 0 43px 0;
+  }
+
+  &::after {
+    @include title-line;
+    margin-right: -20px;
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
+      margin-right: -67px;
+      align-self: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: -110px;
+    }
   }
 }

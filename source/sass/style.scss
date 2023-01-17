@@ -1,11 +1,13 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
+@import "global/mixins.scss";
 @import "global/buttons.scss";
 @import "visually-hidden";
 @import "page.scss";
 /* файлы для индекса */
+@import "container.scss";
 @import "navigation.scss";
-@import "site-list.scss";
+@import "main-header.scss";
 @import "programs.scss";
 @import "hero.scss";
 @import "advantages.scss";
@@ -15,13 +17,18 @@
 @import "social.scss";
 @import "copyright.scss";
 /* файлы для каталога */
-@import "products.scss";
+@import "catalog.scss";
 @import "product.scss";
-@import "product-additional.scss";
-@import "stock.scss";
+@import "additional.scss";
 /* файлы для форм */
 @import "application.scss";
 @import "application-user.scss";
 @import "application-main.scss";
 @import "application-comment.scss";
 @import "application-additionally.scss";
+@import "target-group.scss";
+@import "checkbox.scss";
+@import "radio.scss";
+@import "field.scss";
+@import "form.scss";
+

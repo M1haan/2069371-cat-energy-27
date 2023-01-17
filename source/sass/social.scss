@@ -4,4 +4,31 @@
   padding: 20px 0 21px;
   display: flex;
   justify-content: center;
+  position: relative;
+  border-top: 2px solid rgb(217, 217, 217);
+  border-bottom: 2px solid rgb(217, 217, 217);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.social__link {
+  width: 27px;
+  height: 17px;
+  display: block;
+  padding: 3px 12px 2px;
+}
+
+.social__link-icon {
+  fill: rgb(102, 102, 102);
+
+  &:hover,
+  &:focus {
+    fill: rgb(104, 183, 56);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

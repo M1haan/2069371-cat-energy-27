@@ -10,12 +10,29 @@
   color: #444444;
   list-style: none;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
 }
 
-.copyright__link-logo {
-  margin-left: 130px;
+.copyright__link-text {
+  margin-right: 130px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 23px;
+    margin-right: 23px;
   }
+}
+
+.copyright__link-icon {
+  fill: rgb(102, 102, 102);
+}
+
+.copyright__link:hover .copyright__link-icon,
+.copyright__link:focus .copyright__link-icon {
+  fill: rgb(104, 183, 56);
+}
+
+.copyright__link:active .copyright__link-icon {
+  opacity: 0.3;
 }

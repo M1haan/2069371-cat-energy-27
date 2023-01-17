@@ -1,0 +1,53 @@
+@mixin divider {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(217, 217, 217);
+}
+
+@mixin title-line {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgb(104, 183, 56);
+}
+
+@mixin field-title {
+  position: relative;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: rgb(104, 183, 56);
+      width: 30px;
+      left: -67px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 70px;
+      left: -108px;
+    }
+  }
+}
+
+@mixin input-number {
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
