@@ -19,6 +19,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    position: relative;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
     width: 405px;
     justify-content: space-between;
     padding: 56px 80px;
@@ -59,5 +64,20 @@
 
   @media (min-width: $desktop-width) {
     width: 155px;
+  }
+}
+
+.location__map {
+  width: 100%;
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -192px;
   }
 }
