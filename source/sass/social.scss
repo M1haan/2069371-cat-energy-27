@@ -1,7 +1,7 @@
 .social__list {
   list-style: none;
+  padding: 0;
   margin: 0;
-  padding: 20px 0 21px;
   display: flex;
   justify-content: center;
   position: relative;
@@ -17,7 +17,11 @@
   width: 27px;
   height: 17px;
   display: block;
-  padding: 3px 12px 2px;
+  padding: 20px 12px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 12px 8px;
+  }
 }
 
 .social__link-icon {

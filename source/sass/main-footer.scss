@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
+    padding: 55px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding: 66px 0;
   }
 }
 
@@ -25,7 +27,7 @@
   display: block;
   text-align: center;
   padding-top: 39px;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
 
   &:hover,
   &:focus {
@@ -34,5 +36,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

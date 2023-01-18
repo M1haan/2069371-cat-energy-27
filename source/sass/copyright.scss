@@ -1,5 +1,9 @@
 .copyright {
-  padding: 22px 0;
+  padding: 20px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+  }
 }
 
 .copyright__link {
@@ -17,7 +21,8 @@
 }
 
 .copyright__link-text {
-  margin-right: 130px;
+  margin: 0;
+  margin-right: 140px;
 
   @media (min-width: $tablet-width) {
     margin-right: 23px;

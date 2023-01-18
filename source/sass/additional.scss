@@ -248,7 +248,7 @@
 .additional__button {
   font-size: 16px;
   line-height: 20px;
-  padding: 7px 0;
+  padding: 10px 0;
   width: 100%;
 
   @media (min-width: $desktop-width) {
@@ -268,6 +268,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    background-image: url("../img/catalog/additional_stock_tablet.jpg");
     margin: 0;
     padding: 71px 124px 69px 77px;
     min-height: 200px;
@@ -275,6 +276,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-image: url("../img/catalog/additional_stock.jpg");
     padding: 46px 43px 42px 41px;
   }
 

@@ -42,6 +42,12 @@
   }
 }
 
+.application-main__container:last-child .application-main__label {
+  @media (max-width: $tablet-width) {
+    width: 100px;
+  }
+}
+
 .application-main__label {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
