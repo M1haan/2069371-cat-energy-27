@@ -1,9 +1,9 @@
 .main-header {
   position: relative;
-  padding: 10px 0 17px;
+  padding: 10px 0 13px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 32px;
+    padding: 5px 0 36px;
     border: none;
   }
 
@@ -16,7 +16,7 @@
     @media (min-width: $desktop-width) {
       position: absolute;
       padding: 0;
-      top: 69px;
+      top: 55px;
       right: 0;
       left: 0;
     }
@@ -88,6 +88,7 @@
 }
 
 .main-header__logo {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +118,7 @@
   }
 }
 
-.main-header__logo__image-icon {
+.main-header__logo-icon {
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
   }
@@ -128,6 +129,10 @@
   }
 }
 
-.main-header__logo__image-text {
+.main-header__logo-text {
   padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

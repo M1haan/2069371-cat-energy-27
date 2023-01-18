@@ -9,10 +9,14 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container container">
-        <a class="main-header__logo">
-          <img class="main-header__logo__image-icon" src="./img/logo-mobile.svg" width="34" height="38" alt="Логотип Cat-energy.">
-          <img class="main-header__logo__image-text" src="./img/logo-cat-energy.svg" width="102" height="18" alt="Cat-energy.">
-        </a>
+        <a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/logo_desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="./img/logo_tablet.svg" width="174" height="52">
+            <img class="main-header__logo-icon" src="./img/logo_mobile.svg" width="34" height="38" alt="Логотип Cat-energy.">
+            </picture>
+            <img class="main-header__logo-text" src="./img/logo-cat-energy.svg" width="102" height="18" alt="Cat-energy.">
+          </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">открыть меню.</span>
         </button>
