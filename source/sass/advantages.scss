@@ -30,6 +30,11 @@
     font-size: 60px;
     line-height: 60px;
     grid-column: 1/-1;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -44,13 +49,15 @@
     display: grid;
     grid-template-columns: 250px 250px;
     column-gap: 135px;
-    row-gap: 37px;
+    row-gap: 17px;
     counter-reset: index;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     column-gap: 0;
+    margin-bottom: 50px;
   }
 }
 
@@ -65,6 +72,14 @@
   position: relative;
   min-height: 60px;
 
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -73,66 +88,19 @@
     width: 60px;
     height: 60px;
     background-color: rgb(104, 183, 56);
-  }
 
-  &--healthy::before {
-    background-image: url("../img/advantages_healthy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--simply::before {
-    background-image: url("../img/advantages_simply.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--food::before {
-    background-image: url("../img/advantages_food.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &--time::before {
-    background-image: url("../img/advantages_time.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 110px;
+    padding-top: 151px;
     padding-bottom: 57px;
-
-    &::before {
-      width: 80px;
-      height: 80px;
-    }
-
-    &--healthy {
-      grid-column: 1/2;
-      padding-left: 0;
-      padding-right: 26px;
-    }
-
-    &--simply {
-      grid-column: 2/3;
-      padding-left: 0;
-      padding-right: 22px;
-    }
-
-    &--food {
-      grid-column: 1/2;
-      padding-left: 0;
-      padding-right: 40px;
-    }
-
-    &--time {
-      grid-column: 2/3;
-      padding-left: 0;
-      padding-right: 4px;
-    }
 
     &::after {
       counter-increment: index;
@@ -140,30 +108,110 @@
       position: absolute;
       font-size: 280px;
       line-height: 280px;
+      top: 0;
       right: 0;
-      bottom: 20px;
       color: rgb(242, 242, 242);
       font-family: "Oswald", sans-serif;
       font-weight: 400;
       z-index: -1;
     }
+
+    &--healthy::after {
+      right: 24px;
+
+      @media (min-width: $desktop-width) {
+        right: 30px;
+      }
+    }
+
+    &--simply::after {
+      right: 4px;
+
+      @media (min-width: $desktop-width) {
+        right: 23px;
+      }
+    }
+
+    &--food::after {
+      @media (min-width: $desktop-width) {
+        right: 39px;
+      }
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    &--healthy {
-      margin-right: 94px;
+  &--healthy {
+    &::before {
+      background-image: url("../img/advantages_healthy.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
-    &--food {
-      margin-right: 77px;
+    @media (min-width: $tablet-width) {
+      grid-column: 1/2;
+      padding-left: 0;
+      padding-right: 26px;
     }
 
-    &--simply {
-      margin-right: 79px;
+    @media (min-width: $desktop-width) {
+      margin-right: 70px;
+      max-width: 230px;
+    }
+  }
+
+  &--simply {
+    &::before {
+      background-image: url("../img/advantages_simply.svg");
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
-    &--time {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+      padding-left: 0;
+      padding-right: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 55px;
+      max-width: 246px;
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../img/advantages_food.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-column: 1/2;
+      padding-left: 0;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 37px;
+      max-width: 248px;
+    }
+  }
+
+  &--time {
+    &::before {
+      background-image: url("../img/advantages_time.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+      padding-left: 0;
+      padding-right: 4px;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-right: 0;
+      max-width: 250px;
     }
   }
 }

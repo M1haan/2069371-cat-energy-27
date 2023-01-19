@@ -44,7 +44,7 @@
 
 .application-main__container:last-child .application-main__label {
   @media (max-width: $tablet-width) {
-    width: 100px;
+    min-width: 100px;
   }
 }
 

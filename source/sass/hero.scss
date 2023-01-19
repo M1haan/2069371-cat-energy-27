@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 60%, rgb(255, 255, 255) 60%);
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 63%, rgb(255, 255, 255) 60%);
   position: relative;
   height: 100%;
 
@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 696px;
+    max-height: 696px;
     background-position: right 0;
     padding-top: 141px;
     padding-bottom: 2px;
@@ -23,7 +23,7 @@
       position: absolute;
       content: "";
       background-color: rgba(104, 183, 56, 0.85);
-      width: 51%;
+      width: 50%;
       height: 100%;
       top: 0;
       right: 0;
@@ -38,11 +38,15 @@
       background-size: cover;
       background-position: right bottom;
       background-color: #4f4f54;
-      width: 51%;
+      width: 50%;
       height: 100%;
       top: 0;
       right: 0;
       z-index: -2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero_cat_xl@2x.png");
+      }
     }
   }
 }
@@ -76,6 +80,10 @@
     z-index: -2;
     top: 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero_cat.png@2x.png");
+    }
+
     @media (min-width: $tablet-width) {
       background: none;
       width: fit-content;
@@ -101,7 +109,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 82px 80px 40px 65px;
+    padding: 81px 80px 40px 80px;
     max-width: 420px;
   }
 }
@@ -123,7 +131,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 80px 52px 65px;
+    padding: 0 80px 52px 80px;
     max-width: 420px;
   }
 }
@@ -143,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     top: 0;
-    left: 40%;
+    left: 39%;
     width: 552px;
     min-height: 499px;
     z-index: 1;
@@ -169,7 +177,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 66px;
+    margin-left: 80px;
     margin-bottom: 183px;
   }
 }

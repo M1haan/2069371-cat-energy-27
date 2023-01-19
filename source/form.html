@@ -5,6 +5,10 @@
     <title>Кэт энерджи: Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href=".img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="./manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -92,11 +96,17 @@
               </legend>
               <div class="application-user__wrapper">
                 <label class="application-user__label" for="email">E-mail:*</label>
-                <input class="application-user__field field field--email" type="email" placeholder="KUKLACHEV@GMAIL.COM" name="email" id="email" required>
+                <input class="application-user__field field field--email" type="email" placeholder="кuklachev@gmail.com" name="email" id="email" required>
+                <svg class="application-user__field-email" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
               <div class="application-user__wrapper">
                 <label class="application-user__label" for="phone">Телефон:*</label>
-                <input class="application-user__field field field-tel" type="tel" placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
+                <input class="application-user__field field field--tel" type="tel" placeholder="8 (960) 900-60-90" name="phone" id="phone" required>
+                <svg class="application-user__field-tel" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </div>
             </fieldset>
 
@@ -152,11 +162,12 @@
 
       <section class="location location--theme">
         <div class="location__container">
-          <h2 class="location__title">приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="location__title">приглашаем <br> к сотрудничеству дилеров!</h2>
           <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <iframe class="location__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787672859!2d30.32047247697675!3d59.93871647491515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1673514516592!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург.">
         </iframe>
       </section>
     </main>
@@ -166,7 +177,10 @@
       <h2 class="visually-hidden">Контакты</h2>
       <div class="main-footer__container">
         <a href="#" class="main-footer__logo">
-          <img src="./img/footer_logo.svg" alt="Логотип Cat energy">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./img/footer_logo_tablet.svg" width="143" height="27">
+            <img src="./img/footer_logo.svg" alt="Логотип Cat energy.">
+          </picture>
         </a>
 
         <div class="main-footer__social social">

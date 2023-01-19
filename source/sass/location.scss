@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     justify-content: space-between;
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +37,7 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+  min-width: 139px;
 
   @media (min-width: $tablet-width) {
     width: 172px;

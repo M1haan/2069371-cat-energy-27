@@ -10,6 +10,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,15 +36,22 @@
     min-height: 372px;
     padding-right: 316px;
     padding-left: 52px;
-    margin: 30px 0;
+    margin: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 52px;
     margin: 0;
     padding-right: 61px;
+    max-height: 374px;
 
-    .programs__item:last-child {
+    &:last-child {
+      margin-bottom: 0;
       margin-right: 0;
     }
   }
@@ -56,14 +64,14 @@
   line-height: 37px;
   text-transform: uppercase;
   margin: 0;
-  padding: 30px 0 29px 78px;
+  padding: 30px 0 29px 72px;
   position: relative;
 
   &--icon-loss::before {
     content: "";
     position: absolute;
     top: 21px;
-    left: 0;
+    left: 3px;
     width: 50px;
     height: 53px;
     background-image: url("../img/program_loss.svg");
@@ -92,7 +100,7 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 0;
+    left: -6px;
     width: 67px;
     height: 50px;
     background-image: url("../img/program_increase.svg");
@@ -103,7 +111,7 @@
       background-size: 268px 200px;
       width: 268px;
       height: 200px;
-      top: 81px;
+      top: 92px;
       left: unset;
       right: -288px;
     }
@@ -139,7 +147,7 @@
   color: rgb(0, 0, 0);
   margin: 0;
   margin-bottom: 18px;
-  padding-right: 39px;
+  padding-right: 50px;
   width: fit-content;
   position: relative;
 
@@ -169,7 +177,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-right: 49px;
+    padding-right: 60px;
     margin-bottom: 53px;
     font-size: 20px;
     line-height: 30px;
@@ -187,15 +195,15 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  padding-bottom: 38px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 48px;
+    padding-bottom: 53px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 23px;
+    padding-bottom: 30px;
   }
 }

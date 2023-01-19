@@ -150,4 +150,42 @@
   @media (min-width: $desktop-width) {
     padding: 10px 20px;
   }
+
+  &:focus ~ .application-user__field-tel {
+    color: #68b738;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .application-user__field-tel {
+    color: #ff8282;
+  }
+
+  &:focus ~ .application-user__field-email {
+    /* color: #68b738; */
+    stroke: #68b738;
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .application-user__field-email {
+    stroke: #ff8282;
+  }
+}
+
+.application-user__field-email {
+  position: absolute;
+  content: "";
+  right: 16px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+  }
+}
+
+.application-user__field-tel {
+  position: absolute;
+  content: "";
+  right: 15px;
+  top: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 15px;
+  }
 }

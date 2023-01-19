@@ -27,6 +27,10 @@
   @media (min-width: $tablet-width) {
     margin-right: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 28px;
+  }
 }
 
 .copyright__link-icon {

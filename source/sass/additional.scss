@@ -267,17 +267,29 @@
   min-height: 290px;
   margin-bottom: 35px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/additional_stock@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     background-image: url("../img/catalog/additional_stock_tablet.jpg");
     margin: 0;
-    padding: 71px 124px 69px 77px;
+    padding: 60px 124px 62px 77px;
     min-height: 200px;
     box-sizing: border-box;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/additional_stock_tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/catalog/additional_stock.jpg");
-    padding: 46px 43px 42px 41px;
+    background-image: url("../img/catalog/additional_stock_desktop.jpg");
+    padding: 57px 43px 42px 41px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/additional_stock_desktop@2x.jpg");
+    }
   }
 
   &::after {
