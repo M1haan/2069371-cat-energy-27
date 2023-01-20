@@ -1,13 +1,13 @@
 .location {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
 
   &--theme {
-    background-color: #f2f2f2;
+    background-color: rgb(242, 242, 242);
   }
 }
 
 .location__container {
-  width: 280px;
+  min-width: 280px;
   margin: 0 auto;
   display: flex;
   padding: 26px 20px;
@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     justify-content: space-between;
-    padding: 60px 70px;
+    padding: 56px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,10 +23,11 @@
     position: relative;
     top: 95px;
     left: 110px;
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     width: 405px;
     justify-content: space-between;
-    padding: 56px 80px;
+    padding: 0 80px;
+    min-height: 199px;
   }
 }
 
@@ -47,6 +48,8 @@
 
   @media (min-width: $desktop-width) {
     width: 163px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }
 
@@ -55,16 +58,55 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: rgb(68, 68, 68);
+  margin: 0;
+  min-width: 139px;
 
   @media (min-width: $tablet-width) {
-    width: 160px;
+    max-width: 157px;
+    text-align: end;
     font-size: 16px;
-    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 155px;
+    text-align: start;
+    padding: 0;
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      padding-top: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 18px;
+    }
+  }
+}
+
+.location__address-container--secondary .location__address:last-child {
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+}
+
+.location__address-container {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 56px;
+  }
+
+  &--secondary {
+    @media (min-width: $desktop-width) {
+      gap: 0;
+      text-align: right;
+      max-width: 150px;
+      max-height: 100px;
+      padding-bottom: 42px;
+    }
   }
 }
 
@@ -79,6 +121,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -192px;
+    margin-top: -199px;
+  }
+}
+
+.location__address-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

@@ -152,20 +152,19 @@
   }
 
   &:focus ~ .application-user__field-tel {
-    color: #68b738;
+    stroke: rgb(104, 183, 56);
   }
 
   &:invalid:not(:placeholder-shown) ~ .application-user__field-tel {
-    color: #ff8282;
+    stroke: rgb(255, 130, 130);
   }
 
   &:focus ~ .application-user__field-email {
-    /* color: #68b738; */
-    stroke: #68b738;
+    stroke: rgb(104, 183, 56);
   }
 
   &:invalid:not(:placeholder-shown) ~ .application-user__field-email {
-    stroke: #ff8282;
+    stroke: rgb(255, 130, 130);
   }
 }
 
@@ -173,6 +172,7 @@
   position: absolute;
   content: "";
   right: 16px;
+  stroke: rgb(0, 0, 0);
 
   @media (min-width: $tablet-width) {
     right: 18px;
@@ -184,6 +184,7 @@
   content: "";
   right: 15px;
   top: 15px;
+  stroke: rgb(0, 0, 0);
 
   @media (min-width: $tablet-width) {
     right: 15px;

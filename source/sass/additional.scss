@@ -42,7 +42,7 @@
     position: static;
     content: "";
     height: 2px;
-    background-color: #68b738;
+    background-color: rgb(104, 183, 56);
     width: 100%;
     margin-top: 13px;
     margin-right: -20px;
@@ -70,7 +70,7 @@
 
   &::after {
     @include divider;
-    background-color: #cdcdcd;
+    background-color: rgb(205, 205, 205);
     width: 100%;
   }
 
@@ -108,7 +108,7 @@
 
 
   @media (min-width: $tablet-width) {
-    outline: 1px solid #cdcdcd;
+    outline: 1px solid rgb(205, 205, 205);
     margin-bottom: 69px;
     gap: 0;
   }
@@ -135,7 +135,7 @@
     gap: 21px;
 
     &:not(:last-child) {
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid rgb(205, 205, 205);
     }
 
     @media (min-width: $desktop-width) {
@@ -151,14 +151,14 @@
     gap: 0;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    border-top: 1px solid #cdcdcd;
-    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid rgb(205, 205, 205);
+    border-bottom: 1px solid rgb(205, 205, 205);
     flex-grow: 1;
   }
 
   &::after {
     @include divider;
-    background-color: #cdcdcd;
+    background-color: rgb(205, 205, 205);
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -330,7 +330,7 @@
 .additional__stock-text {
   z-index: 2;
   text-align: center;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;

@@ -1,6 +1,6 @@
 .hero {
   font-family: "Oswald", sans-serif;
-  color: #ffffff;
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -37,7 +37,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right bottom;
-      background-color: #4f4f54;
+      background-color: rgb(79, 79, 84);
       width: 50%;
       height: 100%;
       top: 0;
@@ -101,7 +101,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    color: #000000;
+    color: rgb(0, 0, 0);
     padding: 23px 87px 21px;
     text-align: start;
     font-size: 60px;
@@ -124,7 +124,7 @@
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    color: #000000;
+    color: rgb(0, 0, 0);
     padding: 19px 88px 49px;
     font-size: 20px;
     line-height: 20px;

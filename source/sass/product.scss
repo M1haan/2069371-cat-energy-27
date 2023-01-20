@@ -240,12 +240,8 @@
     opacity: 0.6;
   }
 
-  &:focus .product__link-title {
-    outline: 2px solid rgb(104, 183, 56);
-  }
-
   &:focus-visible {
-    display: none;
+    outline: 2px solid rgb(104, 183, 56);
   }
 }
 

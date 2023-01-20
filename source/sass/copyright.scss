@@ -11,7 +11,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   list-style: none;
   text-decoration: none;
   display: flex;
@@ -42,6 +42,6 @@
   fill: rgb(104, 183, 56);
 }
 
-.copyright__link:active .copyright__link-icon {
+.copyright__link:active {
   opacity: 0.3;
 }

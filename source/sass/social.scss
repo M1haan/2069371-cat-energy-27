@@ -31,15 +31,15 @@
   }
 }
 
+.social__link:hover .social__link-icon,
+.social__link:focus .social__link-icon {
+  fill: rgb(104, 183, 56);
+}
+
+.social__link:active .social__link-icon {
+  opacity: 0.3;
+}
+
 .social__link-icon {
   fill: rgb(102, 102, 102);
-
-  &:hover,
-  &:focus {
-    fill: rgb(104, 183, 56);
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }

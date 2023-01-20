@@ -44,7 +44,8 @@
   }
 
   &:focus-visible {
-    outline: none;
+    outline: 2px solid rgb(104, 183, 56);
+    outline-offset: -2px;
   }
 
   &:disabled + .radio__name {
