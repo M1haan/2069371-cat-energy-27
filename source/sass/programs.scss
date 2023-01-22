@@ -146,7 +146,7 @@
   color: rgb(0, 0, 0);
   margin: 0;
   margin-bottom: 22px;
-  padding-right: 50px;
+  padding-right: 45px;
   width: fit-content;
   position: relative;
 
@@ -154,7 +154,7 @@
     position: absolute;
     content: "";
     height: 10px;
-    width: 32px;
+    width: 24px;
     top: 3px;
     right: 4px;
     background-image: url("../img/program_link_arrow.svg");
@@ -169,6 +169,8 @@
 
   &:hover::after {
     background-image: url("../img/program_link_arrow_hover.svg");
+    width: 32px;
+    background-size: 32px 10px;
   }
 
   &:active {

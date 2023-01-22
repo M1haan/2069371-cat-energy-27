@@ -33,7 +33,7 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: url("../img/hero_cat_xl.png");
+      background-image: url("../img/hero_cat_xl.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: right bottom;
@@ -45,7 +45,7 @@
       z-index: -2;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero_cat_xl@2x.png");
+        background-image: url("../img/hero_cat_xl@2x.webp");
       }
     }
   }
@@ -74,14 +74,14 @@
     width: 100%;
     min-height: 302px;
     display: block;
-    background-image: url("../img/hero_cat.png");
+    background-image: url("../img/hero_cat.webp");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
     top: 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/hero_cat.png@2x.png");
+      background-image: url("../img/hero_cat.png@2x.webp");
     }
 
     @media (min-width: $tablet-width) {

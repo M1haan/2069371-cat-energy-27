@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="/favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href=".img/favicons/apple.png"> <!-- 180×180 -->
-    <link rel="manifest" href="./manifest.webmanifest">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header main-header--position">
@@ -49,6 +52,7 @@
           <picture>
             <source media="(min-width: 1440px)" type="image/webp" srcset="img/hero_product_desktop.webp 1x, img/hero_product_desktop@2x.webp 2x" width="552" height="499">
             <source media="(min-width: 768px)" type="image/webp" srcset="img/hero_product_tablet.webp 1x, img/hero_product_tablet@2x.webp 2x" width="709" height="609">
+            <source type="image/webp" srcset="img/hero_product_mobile.webp 1x, img/hero_product_mobile@2x.webp 2x">
             <source media="(min-width: 1440px)" srcset="img/hero_product_desktop.png 1x, img/hero_product_desktop@2x.png 2x" width="552" height="499">
             <source media="(min-width: 768px)" srcset="img/hero_product_tablet.png 1x, img/hero_product_tablet@2x.png 2x" width="709" height="609">
             <img class="hero__image" src="./img/hero_product_mobile.png" srcset="img/hero_product_mobile@2x.png" width="280" height="270" alt="Продукция Cat energy.">
@@ -126,12 +130,16 @@
           <div class="example__slider">
             <div class="example__slider-item">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/slider_before_tablet.webp 1x, img/slider_before_tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/slider_before_mobile.webp 1x, img/slider_before_mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/slider_before_tablet.png 1x, img/slider_before_tablet@2x.png 2x" width="560" height="512">
                 <img class="example__image-before" src="./img/slider_before_mobile.png" srcset="/img/slider_before_mobile@2x.png" width="280" height="256" alt="Кот Борис до похудения.">
               </picture>
             </div>
             <div class="example__slider-item">
               <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/slider_after_tablet.webp 1x, img/slider_after_tablet@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="img/slider_after_mobile.webp 1x, img/slider_after_mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" srcset="img/slider_after_tablet.png 1x, img/slider_after_tablet@2x.png 2x" width="560" height="512">
                 <img class="example__image-after" src="./img/slider_after_mobile.png" srcset="/img/slider_after_mobile@2x.png" width="280" height="256" alt="Кот Борис после похудения.">
               </picture>
