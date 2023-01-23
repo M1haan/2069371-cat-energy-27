@@ -1,0 +1,73 @@
+.checkbox {
+  padding-left: 46px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+  }
+
+  & input[type="checkbox"]:checked + .checkbox__custom::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 14px;
+    background-image: url("../img/checkbox_xs.svg");
+    background-repeat: no-repeat;
+    top: 6px;
+    left: 6px;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/checkbox_xl.svg");
+      width: 24px;
+      height: 19px;
+      top: 11px;
+      left: 8px;
+    }
+  }
+}
+
+.checkbox__name {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.checkbox__custom {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(205, 205, 205);
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 0;
+  }
+
+  &:hover {
+    border-color: rgb(186, 186, 186);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(104, 183, 56);
+    outline-offset: -2px;
+  }
+
+  &:disabled + .checkbox__name {
+    opacity: 0.3;
+  }
+}

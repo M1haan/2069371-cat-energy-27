@@ -1,0 +1,192 @@
+.application-user {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(68, 68, 68);
+  padding: 26px 0 11px;
+  row-gap: 13px;
+  column-gap: 10px;
+  text-transform: none;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 75px 0 34px;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 78px;
+    padding: 69px 0 33px;
+  }
+}
+
+.application-user__container {
+  min-width: 190px;
+  padding-right: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 41px;
+    min-width: fit-content;
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 39px;
+  }
+}
+
+.application-user__title {
+  @include field-title;
+  display: flex;
+  padding: 27px 0 8px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 0 0 2px;
+
+    &::before {
+      bottom: 12px;
+      left: -67px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 67px 0 5px 0;
+
+    &::before {
+      bottom: 19px;
+      left: -110px;
+    }
+  }
+
+  &::after {
+    @include title-line;
+    margin-right: -20px;
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
+      margin-right: -65px;
+      align-self: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: -110px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.application-user__wrapper {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  text-transform: uppercase;
+  position: relative;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    gap: 21px;
+    width: 100%;
+
+    &:nth-child(2) .contact-field__name {
+      padding-left: 4px;
+
+      @media (min-width: $desktop-width) {
+        padding: 0;
+      }
+    }
+
+    &:nth-child(3) {
+      gap: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+
+  &:nth-child(3) .contact-field__input {
+    padding-top: 15px;
+    padding-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 12px;
+      padding-bottom: 8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 35px 10px 17px;
+    }
+  }
+}
+
+.application-user__label {
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.application-user__field {
+  padding: 12px 43px 13px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 40px 9px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 20px;
+  }
+
+  &:focus ~ .application-user__field-tel {
+    stroke: rgb(104, 183, 56);
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .application-user__field-tel {
+    stroke: rgb(255, 130, 130);
+  }
+
+  &:focus ~ .application-user__field-email {
+    stroke: rgb(104, 183, 56);
+  }
+
+  &:invalid:not(:placeholder-shown) ~ .application-user__field-email {
+    stroke: rgb(255, 130, 130);
+  }
+}
+
+.application-user__field-email {
+  position: absolute;
+  content: "";
+  right: 16px;
+  stroke: rgb(0, 0, 0);
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+  }
+}
+
+.application-user__field-tel {
+  position: absolute;
+  content: "";
+  right: 15px;
+  top: 15px;
+  stroke: rgb(0, 0, 0);
+
+  @media (min-width: $tablet-width) {
+    right: 15px;
+  }
+}

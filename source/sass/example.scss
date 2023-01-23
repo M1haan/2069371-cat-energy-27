@@ -1,6 +1,52 @@
 .example {
-  background-color: #eaeaea;
+  background-color: rgb(234, 234, 234);
   font-family: "Oswald", sans-serif;
+  position: relative;
+  min-height: 660px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 0 90px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 57%, rgb(242, 242, 242) 57%);
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      background-color: rgb(230, 230, 230);
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 23%, rgb(242, 242, 242) 23%);
+    min-height: 598px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.example__container {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    width: 1220px;
+    grid-template-columns: 436px 560px;
+    column-gap: 224px;
+    max-height: 600px;
+  }
 }
 
 .example__title {
@@ -10,6 +56,17 @@
   margin: 0;
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 146px;
+  }
 }
 
 .example__intro {
@@ -17,20 +74,92 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: rgb(68, 68, 68);
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column: 1/-1;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    padding-right: 68px;
+  }
+}
+
+.example__list {
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 32px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 162px);
+    gap: 42px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .example__item {
   margin: 0;
-  padding-bottom: 20px;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+
+  &:first-child {
+    grid-column: 1/2;
+  }
+
+  &:last-child {
+    grid-column: 2/3;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/weight_back.svg");
+    background-repeat: no-repeat;
+    width: 124px;
+    height: 56px;
+    top: 0;
+
+    @media (min-width: $tablet-width) {
+      background-size: 162px 72px;
+      width: 162px;
+      height: 72px;
+    }
+  }
 }
 
 .example__value {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__text {
@@ -38,15 +167,191 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: rgb(68, 68, 68);
+  margin: 0;
+  max-width: 77px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    max-width: 125px;
+  }
 }
 
-.example__total {
+.example__total-container {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
-  margin: 0;
+  color: rgb(0, 0, 0);
   padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: end;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    max-width: 327px;
+    justify-content: space-between;
+  }
+}
+
+.example__subtitle {
+  margin: 0;
+  margin-right: 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.example__price {
+  margin: 0;
+}
+
+.example__slider {
+  position: relative;
+  display: flex;
+  background-color: inherit;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 512px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -205px;
+  }
+}
+
+.example__slider-item {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.example__image-before {
+  overflow: hidden;
+  clip-path: polygon(0 0, 50% 0%, 50% 100%, 0 100%);
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 5px;
+  }
+}
+
+.example__image-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
+}
+
+.example__control {
+  position: absolute;
+  top: 125px;
+  left: 12px;
+  border: none;
+  height: 4px;
+  background-color: rgb(102, 102, 102);
+  border-radius: 2px;
+  transform: rotate(90deg);
+  width: 256px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    top: 254px;
+    left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 253px;
+    left: 24px;
+  }
+
+  &:hover {
+    background-color: rgb(105, 184, 56);
+  }
+
+  &:hover::before {
+    border-color: rgb(104, 183, 56);
+  }
+
+  &:hover > .example__image-slider {
+    color: rgb(104, 183, 56);
+  }
+
+  &:active {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active::before {
+    border-color: rgb(94, 170, 47);
+  }
+
+  &:active > .example__image-slider {
+    opacity: 0.6;
+  }
+}
+
+.example__image-slider {
+  position: absolute;
+  transform: rotate(90deg);
+  top: -18px;
+  left: 108px;
+  color: rgb(102, 102, 102);
+
+  @media (min-width: $tablet-width) {
+    left: 244px;
+  }
+}
+
+.example__case {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 366px 174px;
+    column-gap: 168px;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+  }
 }

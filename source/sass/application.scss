@@ -1,44 +1,96 @@
 .application {
-  font-family: "Oswald", sans-serif;
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .application__intro {
-  font-weight: 400;
+  margin: 0;
+  padding: 20px 0 20px;
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 33px 2px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 67px;
+  }
+}
+
+.application__group {
+  position: relative;
+  border: none;
   margin: 0;
-  margin-bottom: 39px;
+  display: flex;
 }
 
-.application__label {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+.application__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 77px;
+    width: 100%;
+    padding-bottom: 2px;
+  }
 }
 
-.application__field::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
+.application__submit {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 32px;
+  align-items: center;
 
-.application__title {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  margin: 0;
-  margin-top: 26px;
-  margin-bottom: 35px;
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 27px 4px 72px;
+    gap: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 29px 0 82px;
+    gap: 84px;
+  }
 }
 
 .application__legend {
   font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  padding: 20px 0 0;
   font-size: 14px;
   line-height: 16px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 5px;
+    font-size: 16px;
+    max-width: 200px;
+  }
+}
+
+.application__button {
+  min-width: 280px;
+  width: 100%;
+  min-height: 40px;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    font-size: 20px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }

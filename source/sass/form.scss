@@ -1,0 +1,43 @@
+.form__container {
+  margin: 0 auto;
+}
+
+.form--container {
+  flex-grow: 1;
+}
+
+.form__title {
+  position: relative;
+  margin: 0;
+  padding: 27px 0 17px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: rgb(235, 235, 235);
+    top: 0;
+    left: -20px;
+
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 38px 27px 37px;
+    font-size: 60px;
+    line-height: 60px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 0 56px;
+  }
+}

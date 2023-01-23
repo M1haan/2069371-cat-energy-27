@@ -1,0 +1,92 @@
+.field {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(68, 68, 68);
+  display: flex;
+  padding: 13px 20px 14px;
+  border: 1px solid rgb(231, 231, 231);
+  flex-grow: 1;
+  border-radius: 0;
+  min-width: 130px;
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: rgb(68, 68, 68);
+  }
+
+  &:hover {
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus-visible {
+    outline: 2px solid rgb(68, 68, 68);
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 2px solid rgb(255, 130, 130);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.field[type="number"] {
+  appearance: textfield;
+}
+
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.field--email {
+  position: relative;
+  border-color: rgb(205, 205, 205);
+
+  &:hover {
+    border-color: rgb(231, 231, 231);
+  }
+}
+
+.field--tel {
+  position: relative;
+  border-color: rgb(205, 205, 205);
+
+  &:hover {
+    border-color: rgb(231, 231, 231);
+  }
+}
+
+.field--comment {
+  min-height: 150px;
+  padding: 8px 15px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 9px 21px;
+    min-height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 19px;
+  }
+
+  &::placeholder {
+    position: absolute;
+  }
+}

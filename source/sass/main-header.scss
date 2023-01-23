@@ -1,0 +1,138 @@
+.main-header {
+  position: relative;
+  padding: 10px 0 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 36px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0 32px;
+    z-index: 1;
+  }
+
+  &--position {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      padding: 0;
+      top: 55px;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+.main-header__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.main-header__toggle {
+  position: relative;
+  align-self: center;
+  margin-left: auto;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 20px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    left: 0;
+    background-image: url("../img/navigation_open.svg");
+    width: 24px;
+    height: 18px;
+    top: 1px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url("../img/navigation_close.svg");
+    width: 24px;
+    height: 20px;
+    left: 2px;
+    top: 0;
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    outline: 2px solid rgb(104, 183, 56);
+    outline-offset: 5px;
+  }
+}
+
+.main-header__logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap: 55px;
+  cursor: pointer;
+  height: fit-content;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    padding-top: 2px;
+  }
+}
+
+.main-header__logo-icon {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    padding-top: 2px;
+  }
+}
+
+.main-header__logo-text {
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
