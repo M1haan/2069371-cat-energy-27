@@ -1,5 +1,5 @@
 .field {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-size: 16px;
   line-height: 18px;
   color: rgb(68, 68, 68);
@@ -33,10 +33,12 @@
 
   &:focus-visible {
     outline: 2px solid rgb(68, 68, 68);
+    outline-offset: -2px;
   }
 
   &:invalid:not(:placeholder-shown) {
     outline: 2px solid rgb(255, 130, 130);
+    outline-offset: -2px;
   }
 
   &:disabled {

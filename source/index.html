@@ -15,8 +15,7 @@
   </head>
   <body class="page__body">
     <header class="main-header main-header--position">
-
-      <div class="main-header__container container">
+      <div class="main-header__container">
         <a class="main-header__logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="./img/logo_desktop.svg" width="202" height="59">
@@ -24,23 +23,23 @@
             <img class="main-header__logo-icon" src="./img/logo_mobile.svg" width="34" height="38" alt="Логотип Cat-energy.">
             </picture>
             <img class="main-header__logo-text" src="./img/logo-cat-energy.svg" width="102" height="18" alt="Cat-energy.">
-          </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">открыть меню.</span>
-        </button>
-        <nav class="navigation navigation--closed navigation--nojs">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--color navigation__link--current navigation__link--current-desktop" href="#">Главная</a>
+        </a>
+        <nav class="main-header__nav main-header__nav--nojs">
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link main-header__nav-link--color main-header__nav-link--current main-header__nav-link--current-desktop" href="#">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--color" href="catalog.html">Каталог продукции</a>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link main-header__nav-link--color" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--color" href="form.html">Подбор программы</a>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link main-header__nav-link--color" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">открыть меню.</span>
+        </button>
       </div>
     </header>
     <main class="main-container">

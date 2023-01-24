@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи: Каталог</title>
@@ -15,33 +14,32 @@
     <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
-
     <header class="main-header">
-      <div class="main-header__container container">
-        <a class="main-header__logo" href="index.html">
+      <div class="main-header__container">
+        <a class="main-header__logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="./img/logo_desktop.svg" width="202" height="59">
             <source media="(min-width: 768px)" srcset="./img/logo_tablet.svg" width="174" height="52">
             <img class="main-header__logo-icon" src="./img/logo_mobile.svg" width="34" height="38" alt="Логотип Cat-energy.">
             </picture>
             <img class="main-header__logo-text" src="./img/logo-cat-energy.svg" width="102" height="18" alt="Cat-energy.">
-          </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">открыть меню.</span>
-        </button>
-        <nav class="navigation navigation--closed navigation--nojs">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="index.html">Главная</a>
+        </a>
+        <nav class="main-header__nav main-header__nav--nojs">
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link" href="index.html">Главная</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="#">Каталог продукции</a>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link main-header__nav-link--current" href="#">Каталог продукции</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Подбор программы</a>
+            <li class="main-header__nav-item">
+              <a class="main-header__nav-link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">открыть меню.</span>
+        </button>
       </div>
     </header>
     <main class="catalog catalog--container">
@@ -150,7 +148,6 @@
                 <source media="(min-width: 768px)" srcset="./img/catalog/product_buckwheat_xs_tablet.png 1x, ./img/catalog/product_buckwheat_xs_tablet@2x.png 2x" width="161" height="171">
                 <img class="product__image" src="./img/catalog/product_buckwheat_xs.png" srcset="./img/catalog/product_buckwheat_xs@2x.png" width="68" height="78" alt="Корм, вкус гречки.">
               </picture>
-
               </a>
               <a class="product__link" href="#">
                 <h3 class="product__link-title">Cat Energy SLIM 500 г</h3>

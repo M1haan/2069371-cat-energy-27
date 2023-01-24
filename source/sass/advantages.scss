@@ -18,7 +18,7 @@
 }
 
 .advantages__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -40,7 +40,7 @@
 
 .advantages__list {
   list-style: none;
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   margin: 0;
   padding: 0;
   margin-bottom: 49px;
@@ -103,7 +103,7 @@
       top: 0;
       right: 0;
       color: rgb(242, 242, 242);
-      font-family: "Oswald", sans-serif;
+      font-family: $font-title;
       font-weight: 400;
       z-index: -1;
     }

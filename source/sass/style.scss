@@ -1,12 +1,11 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
-@import "global/buttons.scss";
-@import "visually-hidden";
+@import "buttons.scss";
+@import "visually-hidden.scss";
 @import "page.scss";
 /* файлы для индекса */
 @import "container.scss";
-@import "navigation.scss";
 @import "main-header.scss";
 @import "programs.scss";
 @import "hero.scss";
