@@ -9,24 +9,24 @@
   @media (min-width: $desktop-width) {
     padding-left: 60px;
   }
+}
 
-  & input[type="checkbox"]:checked + .checkbox__custom::before {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 14px;
-    background-image: url("../img/checkbox_xs.svg");
-    background-repeat: no-repeat;
-    top: 6px;
-    left: 6px;
+.checkbox__field:checked + .checkbox__custom::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/checkbox_xs.svg");
+  background-repeat: no-repeat;
+  top: 6px;
+  left: 6px;
 
-    @media (min-width: $tablet-width) {
-      background-image: url("../img/checkbox_xl.svg");
-      width: 24px;
-      height: 19px;
-      top: 11px;
-      left: 8px;
-    }
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/checkbox_xl.svg");
+    width: 24px;
+    height: 19px;
+    top: 11px;
+    left: 8px;
   }
 }
 
@@ -62,12 +62,12 @@
     border-color: rgb(186, 186, 186);
   }
 
-  &:focus-visible {
-    outline: 2px solid rgb(104, 183, 56);
-    outline-offset: -2px;
-  }
-
   &:disabled + .checkbox__name {
     opacity: 0.3;
   }
+}
+
+.checkbox:focus-within .checkbox__custom {
+  outline: 2px solid rgb(104, 183, 56);
+  outline-offset: -2px;
 }

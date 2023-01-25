@@ -29,7 +29,7 @@
   position: relative;
   padding: 26px 0 34px 0;
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -167,7 +167,7 @@
 }
 
 .additional__item-name {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -190,10 +190,9 @@
 .additional__product {
   display: flex;
   justify-content: space-between;
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   font-size: 14px;
   line-height: 14px;
-  max-width: auto;
   margin: 13px 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -331,7 +330,7 @@
   z-index: 2;
   text-align: center;
   color: rgb(255, 255, 255);
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   font-size: 16px;
   line-height: 20px;
   margin: 0;

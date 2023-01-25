@@ -11,7 +11,7 @@
 .application__intro {
   margin: 0;
   padding: 20px 0 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -64,7 +64,7 @@
 }
 
 .application__legend {
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   padding: 20px 0 0;
   font-size: 14px;
   line-height: 16px;

@@ -1,6 +1,6 @@
 .example {
   background-color: rgb(234, 234, 234);
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   position: relative;
   min-height: 660px;
 
@@ -70,7 +70,7 @@
 }
 
 .example__intro {
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -163,7 +163,7 @@
 }
 
 .example__text {
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -310,10 +310,6 @@
     border-color: rgb(104, 183, 56);
   }
 
-  &:hover > .example__image-slider {
-    color: rgb(104, 183, 56);
-  }
-
   &:active {
     background-color: rgb(94, 170, 47);
   }
@@ -321,10 +317,14 @@
   &:active::before {
     border-color: rgb(94, 170, 47);
   }
+}
 
-  &:active > .example__image-slider {
-    opacity: 0.6;
-  }
+.example__control:hover > .example__image-slider {
+  color: rgb(104, 183, 56);
+}
+
+.example__control:active > .example__image-slider {
+  opacity: 0.6;
 }
 
 .example__image-slider {

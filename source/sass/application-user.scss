@@ -1,5 +1,5 @@
 .application-user {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-size: 16px;
   line-height: 18px;
   color: rgb(68, 68, 68);
@@ -93,36 +93,40 @@
   @media (min-width: $tablet-width) {
     gap: 21px;
     width: 100%;
-
-    &:nth-child(2) .contact-field__name {
-      padding-left: 4px;
-
-      @media (min-width: $desktop-width) {
-        padding: 0;
-      }
-    }
-
-    &:nth-child(3) {
-      gap: 23px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     gap: 20px;
   }
+}
 
-  &:nth-child(3) .contact-field__input {
-    padding-top: 15px;
-    padding-bottom: 11px;
+.application-user__wrapper:nth-child(2) .contact-field__name {
+  @media (min-width: $tablet-width) {
+    padding-left: 4px;
+  }
 
-    @media (min-width: $tablet-width) {
-      padding-top: 12px;
-      padding-bottom: 8px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      padding: 10px 35px 10px 17px;
-    }
+.application-user__wrapper:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.application-user__wrapper:nth-child(3) .contact-field__input {
+  padding-top: 15px;
+  padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 35px 10px 17px;
   }
 }
 
@@ -150,22 +154,22 @@
   @media (min-width: $desktop-width) {
     padding: 10px 20px;
   }
+}
 
-  &:focus ~ .application-user__field-tel {
-    stroke: rgb(104, 183, 56);
-  }
+.application-user__field:focus ~ .application-user__field-tel {
+  stroke: rgb(104, 183, 56);
+}
 
-  &:invalid:not(:placeholder-shown) ~ .application-user__field-tel {
-    stroke: rgb(255, 130, 130);
-  }
+.application-user__field:invalid:not(:placeholder-shown) ~ .application-user__field-tel {
+  stroke: rgb(255, 130, 130);
+}
 
-  &:focus ~ .application-user__field-email {
-    stroke: rgb(104, 183, 56);
-  }
+.application-user__field:focus ~ .application-user__field-email {
+  stroke: rgb(104, 183, 56);
+}
 
-  &:invalid:not(:placeholder-shown) ~ .application-user__field-email {
-    stroke: rgb(255, 130, 130);
-  }
+.application-user__field:invalid:not(:placeholder-shown) ~ .application-user__field-email {
+  stroke: rgb(255, 130, 130);
 }
 
 .application-user__field-email {

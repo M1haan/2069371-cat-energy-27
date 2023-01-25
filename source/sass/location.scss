@@ -32,7 +32,7 @@
 }
 
 .location__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -54,7 +54,7 @@
 }
 
 .location__address {
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

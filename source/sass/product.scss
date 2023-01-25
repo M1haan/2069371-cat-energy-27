@@ -10,7 +10,7 @@
 
 .product__title {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -80,60 +80,6 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 21px 0 23px;
 
-  .product__value:nth-child(n+1):not(:nth-child(4)) {
-    @media (min-width: $tablet-width) {
-      margin-right: 5px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0;
-    }
-  }
-
-  &:nth-child(2) .product__image {
-    padding-bottom: 8px;
-
-    @media (min-width: $tablet-width) {
-      padding-bottom: 0;
-      margin-bottom: 28px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 45px;
-    }
-  }
-
-  &:nth-child(odd) .product__image {
-    @media (min-width: $tablet-width) {
-      padding-top: 27px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 42px;
-    }
-  }
-
-  &:first-child .product__image {
-    padding-top: 0;
-    padding-bottom: 9px;
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-    }
-  }
-
-  &:nth-child(4) .product__image {
-    padding-top: 8px;
-  }
-
-  &:nth-child(6) .product__image {
-    padding-top: 15px;
-  }
-
-  &:nth-child(8) .product__image {
-    padding-top: 7px;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -181,6 +127,60 @@
   }
 }
 
+.product__value:nth-child(n+1):not(:nth-child(4)) {
+  @media (min-width: $tablet-width) {
+    margin-right: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.product__card:nth-child(2) .product__image {
+  padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.product__card:nth-child(odd) .product__image {
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 42px;
+  }
+}
+
+.product__card:first-child .product__image {
+  padding-top: 0;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.product__card:nth-child(4) .product__image {
+  padding-top: 8px;
+}
+
+.product__card:nth-child(6) .product__image {
+  padding-top: 15px;
+}
+
+.product__card:nth-child(8) .product__image {
+  padding-top: 7px;
+}
+
 .product__link-image {
   display: flex;
   justify-self: center;
@@ -214,7 +214,7 @@
   display: block;
   text-decoration: none;
   padding-right: 66px;
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   height: fit-content;
   margin-bottom: 15px;
   max-width: 76px;
@@ -231,18 +231,18 @@
     padding: 0 6px;
     max-width: 145px;
   }
+}
 
-  &:hover .product__link-title {
-    color: rgb(104, 183, 56);
-  }
+.product__link:hover .product__link-title {
+  color: rgb(104, 183, 56);
+}
 
-  &:active .product__link-title {
-    opacity: 0.6;
-  }
+.product__link:active .product__link-title {
+  opacity: 0.6;
+}
 
-  &:focus-visible {
-    outline: 2px solid rgb(104, 183, 56);
-  }
+.product__link:focus-visible {
+  outline: 2px solid rgb(104, 183, 56);
 }
 
 .product__link-title {
@@ -265,7 +265,7 @@
 }
 
 .product__details {
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   font-size: 12px;
   line-height: 16px;
   color: rgb(68, 68, 68);
@@ -380,7 +380,7 @@
 }
 
 .product__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $font-title;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
@@ -401,7 +401,7 @@
 }
 
 .product__description {
-  font-family: "Lato", sans-serif;
+  font-family: $font-description;
   margin: 0;
   font-size: 12px;
   line-height: 16px;
