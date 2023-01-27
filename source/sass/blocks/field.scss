@@ -59,6 +59,7 @@
 .field--email {
   position: relative;
   border-color: rgb(205, 205, 205);
+  padding-right: 40px;
 
   &:hover {
     border-color: rgb(231, 231, 231);
@@ -68,6 +69,7 @@
 .field--tel {
   position: relative;
   border-color: rgb(205, 205, 205);
+  padding-right: 40px;
 
   &:hover {
     border-color: rgb(231, 231, 231);
@@ -78,6 +80,7 @@
   min-height: 150px;
   padding: 8px 15px;
   box-sizing: border-box;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     padding: 9px 21px;
