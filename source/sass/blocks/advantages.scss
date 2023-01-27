@@ -55,8 +55,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    column-gap: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 77px;
     margin-bottom: 50px;
   }
 }
@@ -110,24 +111,10 @@
 
     &--healthy::after {
       right: 24px;
-
-      @media (min-width: $desktop-width) {
-        right: 30px;
-      }
     }
 
     &--simply::after {
       right: 4px;
-
-      @media (min-width: $desktop-width) {
-        right: 23px;
-      }
-    }
-
-    &--food::after {
-      @media (min-width: $desktop-width) {
-        right: 39px;
-      }
     }
   }
 
@@ -139,13 +126,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      grid-column: 1/2;
       padding-left: 0;
       padding-right: 26px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 70px;
       max-width: 230px;
     }
   }
@@ -158,13 +143,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      grid-column: 2/3;
       padding-left: 0;
       padding-right: 22px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 55px;
       max-width: 246px;
     }
   }
@@ -177,13 +160,11 @@
     }
 
     @media (min-width: $tablet-width) {
-      grid-column: 1/2;
       padding-left: 0;
       padding-right: 40px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 37px;
       max-width: 248px;
     }
   }
@@ -196,7 +177,6 @@
     }
 
     @media (min-width: $tablet-width) {
-      grid-column: 2/3;
       padding-left: 0;
       padding-right: 4px;
     }

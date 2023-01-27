@@ -35,6 +35,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 13px;
+    max-height: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +45,7 @@
 
 .application-main__container:last-child .application-main__label {
   @media (max-width: $tablet-width) {
-    min-width: 100px;
+    min-width: 93px;
   }
 }
 

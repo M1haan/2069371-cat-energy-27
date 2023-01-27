@@ -21,6 +21,7 @@
     flex-direction: row;
     gap: 78px;
     padding: 69px 0 33px;
+    flex-wrap: wrap;
   }
 }
 
@@ -97,6 +98,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 20px;
+    max-width: 46.8%;
   }
 }
 
@@ -191,6 +193,7 @@
   stroke: rgb(0, 0, 0);
 
   @media (min-width: $tablet-width) {
-    right: 15px;
+    right: 18px;
+    top: 16px;
   }
 }
