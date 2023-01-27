@@ -111,7 +111,8 @@
               <legend class="application-comment__title">
                 <span class="application-comment__container">Комментарий</span>
               </legend>
-              <textarea class="application-comment__field field field--comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment">Комментарий к заказу</label>
+              <textarea class="application-comment__field field field--comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
             <fieldset class="application__group application-additionally">
               <legend class="application-additionally__title">
@@ -174,7 +175,7 @@
         <a href="#" class="main-footer__logo">
           <picture>
             <source media="(min-width: 768px)" srcset="./img/footer_logo_tablet.svg" width="143" height="27">
-            <img src="./img/footer_logo.svg" alt="Логотип Cat energy.">
+            <img src="./img/footer_logo.svg" width="128" height="24" alt="Логотип Cat energy.">
           </picture>
         </a>
         <div class="main-footer__social social">

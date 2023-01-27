@@ -132,14 +132,14 @@ export const build = gulp.series(
   copy,
   optimizeImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
-  );
+);
 
   // Default
 
@@ -148,14 +148,14 @@ export default gulp.series(
   copy,
   copyImages,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
   ),
   gulp.series(
-  server,
-  watcher
+    server,
+    watcher
   ));
